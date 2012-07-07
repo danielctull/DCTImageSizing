@@ -15,8 +15,8 @@
 		24036F5A15A844F900644C6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24036F5915A844F900644C6D /* AppDelegate.m */; };
 		24036F5D15A844F900644C6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24036F5C15A844F900644C6D /* ViewController.m */; };
 		24036F6015A844F900644C6D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24036F5E15A844F900644C6D /* ViewController.xib */; };
-		24036F6B15A8484700644C6D /* gravtug_durda_smallf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24036F6A15A8484700644C6D /* gravtug_durda_smallf.jpg */; };
 		24036F6C15A8492D00644C6D /* libDCTImageSizing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE272F15A8373F00161A59 /* libDCTImageSizing.a */; };
+		24036F6E15A84CB800644C6D /* 300px-Colouring_pencils.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 24036F6D15A84CB800644C6D /* 300px-Colouring_pencils.jpg */; };
 		2478F06D15A8378E000C0785 /* DCTContentSizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478F06C15A8378E000C0785 /* DCTContentSizerTests.m */; };
 		2478F07115A837DE000C0785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07015A837DE000C0785 /* UIKit.framework */; };
 		2478F07215A837ED000C0785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07015A837DE000C0785 /* UIKit.framework */; };
@@ -68,7 +68,7 @@
 		24036F5B15A844F900644C6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		24036F5C15A844F900644C6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		24036F5F15A844F900644C6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		24036F6A15A8484700644C6D /* gravtug_durda_smallf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gravtug_durda_smallf.jpg; sourceTree = "<group>"; };
+		24036F6D15A84CB800644C6D /* 300px-Colouring_pencils.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "300px-Colouring_pencils.jpg"; sourceTree = "<group>"; };
 		2478F06615A83776000C0785 /* DCTContentSizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTContentSizer.h; sourceTree = "<group>"; };
 		2478F06715A83776000C0785 /* DCTContentSizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTContentSizer.m; sourceTree = "<group>"; };
 		2478F06B15A8378E000C0785 /* DCTContentSizerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTContentSizerTests.h; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				24036F5B15A844F900644C6D /* ViewController.h */,
 				24036F5C15A844F900644C6D /* ViewController.m */,
 				24036F5E15A844F900644C6D /* ViewController.xib */,
-				24036F6A15A8484700644C6D /* gravtug_durda_smallf.jpg */,
+				24036F6D15A84CB800644C6D /* 300px-Colouring_pencils.jpg */,
 				24036F5015A844F900644C6D /* Supporting Files */,
 			);
 			path = DCTImageSizingDemo;
@@ -313,7 +313,7 @@
 			files = (
 				24036F5415A844F900644C6D /* InfoPlist.strings in Resources */,
 				24036F6015A844F900644C6D /* ViewController.xib in Resources */,
-				24036F6B15A8484700644C6D /* gravtug_durda_smallf.jpg in Resources */,
+				24036F6E15A84CB800644C6D /* 300px-Colouring_pencils.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

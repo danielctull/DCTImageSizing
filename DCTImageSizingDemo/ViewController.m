@@ -37,7 +37,7 @@ NSString * const DCTUIViewContentModeStrings[] = {
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	_image = [UIImage imageNamed:@"gravtug_durda_smallf.jpg"];
+	_image = [UIImage imageNamed:@"300px-Colouring_pencils.jpg"];
 	self.contentModeImageView.image = _image;
 	self.resizedImageView.image = _image;
 	CGSize size = self.resizedImageView.bounds.size;
