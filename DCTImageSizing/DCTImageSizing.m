@@ -14,14 +14,28 @@
 - (UIImage *)dct_imageWithSize:(CGSize)size contentMode:(UIViewContentMode)contentMode {
 
 	CGRect imageRect = [DCTContentSizer rectForOriginalSize:self.size desiredSize:size contentMode:contentMode];
-	UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
-	CGImageRef sourceImg = CGImageCreateWithImageInRect([self CGImage], imageRect);
+
+	CGRect contextRect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+	CGRect intersectionRect = CGRectIntersection(imageRect, contextRect);
+	BOOL isOpaque = (CGRectEqualToRect(contextRect, intersectionRect)
+					 && ![self dctImageSizing_containsAlhpa]);
+
+	UIGraphicsBeginImageContextWithOptions(size, isOpaque, 0.0);
 	[self drawInRect:imageRect];
-	CGImageRelease(sourceImg);
 	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 
 	return image;
+}
+
+- (BOOL)dctImageSizing_containsAlhpa {
+	CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(self.CGImage);
+	if (alphaInfo == kCGImageAlphaNone
+		|| alphaInfo == kCGImageAlphaNoneSkipFirst
+		||alphaInfo == kCGImageAlphaNoneSkipLast)
+		return NO;
+
+	return YES;
 }
 
 @end
