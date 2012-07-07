@@ -30,7 +30,6 @@
 		24BE274515A8373F00161A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE273215A8373F00161A59 /* Foundation.framework */; };
 		24BE274815A8373F00161A59 /* libDCTImageSizing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE272F15A8373F00161A59 /* libDCTImageSizing.a */; };
 		24BE274E15A8373F00161A59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24BE274C15A8373F00161A59 /* InfoPlist.strings */; };
-		24BE275115A8373F00161A59 /* DCTImageSizingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BE275015A8373F00161A59 /* DCTImageSizingTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +83,6 @@
 		24BE274115A8373F00161A59 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		24BE274B15A8373F00161A59 /* DCTImageSizingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTImageSizingTests-Info.plist"; sourceTree = "<group>"; };
 		24BE274D15A8373F00161A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		24BE274F15A8373F00161A59 /* DCTImageSizingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTImageSizingTests.h; sourceTree = "<group>"; };
-		24BE275015A8373F00161A59 /* DCTImageSizingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTImageSizingTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,8 +201,6 @@
 		24BE274915A8373F00161A59 /* DCTImageSizingTests */ = {
 			isa = PBXGroup;
 			children = (
-				24BE274F15A8373F00161A59 /* DCTImageSizingTests.h */,
-				24BE275015A8373F00161A59 /* DCTImageSizingTests.m */,
 				2478F06B15A8378E000C0785 /* DCTContentSizerTests.h */,
 				2478F06C15A8378E000C0785 /* DCTContentSizerTests.m */,
 				24BE274A15A8373F00161A59 /* Supporting Files */,
@@ -367,7 +362,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24BE275115A8373F00161A59 /* DCTImageSizingTests.m in Sources */,
 				2478F06D15A8378E000C0785 /* DCTContentSizerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
