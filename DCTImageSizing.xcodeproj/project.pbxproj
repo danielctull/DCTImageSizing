@@ -417,6 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCTImageSizingDemo/DCTImageSizingDemo-Prefix.pch";
 				INFOPLIST_FILE = "DCTImageSizingDemo/DCTImageSizingDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -433,6 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCTImageSizingDemo/DCTImageSizingDemo-Prefix.pch";
 				INFOPLIST_FILE = "DCTImageSizingDemo/DCTImageSizingDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -491,6 +493,7 @@
 				DSTROOT = /tmp/DCTImageSizing.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCTImageSizing/DCTImageSizing-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -504,6 +507,7 @@
 				DSTROOT = /tmp/DCTImageSizing.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCTImageSizing/DCTImageSizing-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -551,6 +555,7 @@
 				24036F6215A844F900644C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24BE272915A8373F00161A59 /* Build configuration list for PBXProject "DCTImageSizing" */ = {
 			isa = XCConfigurationList;
