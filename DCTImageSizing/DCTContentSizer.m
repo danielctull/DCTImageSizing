@@ -127,7 +127,7 @@
 }
 
 + (CGRect)_redrawRectForOriginalSize:(CGSize)originalSize desiredSize:(CGSize)desiredSize {
-	return CGRectMake(0.0f, 0.0f, 0.0f, 0.0f);
+	return CGRectMake(0.0f, 0.0f, originalSize.width, originalSize.height);
 }
 
 + (CGRect)_centerRectForOriginalSize:(CGSize)originalSize desiredSize:(CGSize)desiredSize {

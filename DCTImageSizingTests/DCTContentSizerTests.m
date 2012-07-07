@@ -48,7 +48,7 @@
 	CGRect rect = [DCTContentSizer rectForOriginalSize:originalSize
 										   desiredSize:desiredSize
 										   contentMode:UIViewContentModeRedraw];
-	CGRect expectedRect = CGRectMake(0.0f, 0.0f, 0.0f, 0.0f);
+	CGRect expectedRect = CGRectMake(0.0f, 0.0f, 400.0f, 400.0f);
 	STAssertTrue(CGRectEqualToRect(expectedRect, rect), @"expectedRect:%@ rect:%@", NSStringFromCGRect(expectedRect), NSStringFromCGRect(rect));
 }
 
