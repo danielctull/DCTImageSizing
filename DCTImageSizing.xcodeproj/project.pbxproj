@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2478F06D15A8378E000C0785 /* DCTContentSizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478F06C15A8378E000C0785 /* DCTContentSizerTests.m */; };
+		2478F07115A837DE000C0785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07015A837DE000C0785 /* UIKit.framework */; };
+		2478F07215A837ED000C0785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07015A837DE000C0785 /* UIKit.framework */; };
+		2478F07315A8382B000C0785 /* DCTContentSizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478F06715A83776000C0785 /* DCTContentSizer.m */; };
+		2478F07415A8383F000C0785 /* DCTContentSizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2478F06615A83776000C0785 /* DCTContentSizer.h */; };
+		2478F07815A84058000C0785 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07515A839C4000C0785 /* CoreGraphics.framework */; };
+		24BE273315A8373F00161A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE273215A8373F00161A59 /* Foundation.framework */; };
+		24BE273815A8373F00161A59 /* DCTImageSizing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24BE273715A8373F00161A59 /* DCTImageSizing.h */; };
+		24BE273A15A8373F00161A59 /* DCTImageSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BE273915A8373F00161A59 /* DCTImageSizing.m */; };
+		24BE274215A8373F00161A59 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE274115A8373F00161A59 /* SenTestingKit.framework */; };
+		24BE274515A8373F00161A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE273215A8373F00161A59 /* Foundation.framework */; };
+		24BE274815A8373F00161A59 /* libDCTImageSizing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE272F15A8373F00161A59 /* libDCTImageSizing.a */; };
+		24BE274E15A8373F00161A59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24BE274C15A8373F00161A59 /* InfoPlist.strings */; };
+		24BE275115A8373F00161A59 /* DCTImageSizingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BE275015A8373F00161A59 /* DCTImageSizingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24BE274615A8373F00161A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24BE272615A8373F00161A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24BE272E15A8373F00161A59;
+			remoteInfo = DCTImageSizing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24BE272D15A8373F00161A59 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				24BE273815A8373F00161A59 /* DCTImageSizing.h in CopyFiles */,
+				2478F07415A8383F000C0785 /* DCTContentSizer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2478F06615A83776000C0785 /* DCTContentSizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTContentSizer.h; sourceTree = "<group>"; };
+		2478F06715A83776000C0785 /* DCTContentSizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTContentSizer.m; sourceTree = "<group>"; };
+		2478F06B15A8378E000C0785 /* DCTContentSizerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTContentSizerTests.h; sourceTree = "<group>"; };
+		2478F06C15A8378E000C0785 /* DCTContentSizerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTContentSizerTests.m; sourceTree = "<group>"; };
+		2478F07015A837DE000C0785 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2478F07515A839C4000C0785 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		24BE272F15A8373F00161A59 /* libDCTImageSizing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTImageSizing.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BE273215A8373F00161A59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24BE273615A8373F00161A59 /* DCTImageSizing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTImageSizing-Prefix.pch"; sourceTree = "<group>"; };
+		24BE273715A8373F00161A59 /* DCTImageSizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTImageSizing.h; sourceTree = "<group>"; };
+		24BE273915A8373F00161A59 /* DCTImageSizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTImageSizing.m; sourceTree = "<group>"; };
+		24BE274015A8373F00161A59 /* DCTImageSizingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTImageSizingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BE274115A8373F00161A59 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		24BE274B15A8373F00161A59 /* DCTImageSizingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTImageSizingTests-Info.plist"; sourceTree = "<group>"; };
+		24BE274D15A8373F00161A59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24BE274F15A8373F00161A59 /* DCTImageSizingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTImageSizingTests.h; sourceTree = "<group>"; };
+		24BE275015A8373F00161A59 /* DCTImageSizingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTImageSizingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24BE272C15A8373F00161A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2478F07115A837DE000C0785 /* UIKit.framework in Frameworks */,
+				24BE273315A8373F00161A59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BE273C15A8373F00161A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2478F07815A84058000C0785 /* CoreGraphics.framework in Frameworks */,
+				2478F07215A837ED000C0785 /* UIKit.framework in Frameworks */,
+				24BE274215A8373F00161A59 /* SenTestingKit.framework in Frameworks */,
+				24BE274515A8373F00161A59 /* Foundation.framework in Frameworks */,
+				24BE274815A8373F00161A59 /* libDCTImageSizing.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24BE272415A8373F00161A59 = {
+			isa = PBXGroup;
+			children = (
+				24BE273415A8373F00161A59 /* DCTImageSizing */,
+				24BE274915A8373F00161A59 /* DCTImageSizingTests */,
+				24BE273115A8373F00161A59 /* Frameworks */,
+				24BE273015A8373F00161A59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24BE273015A8373F00161A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24BE272F15A8373F00161A59 /* libDCTImageSizing.a */,
+				24BE274015A8373F00161A59 /* DCTImageSizingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24BE273115A8373F00161A59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2478F07515A839C4000C0785 /* CoreGraphics.framework */,
+				2478F07015A837DE000C0785 /* UIKit.framework */,
+				24BE273215A8373F00161A59 /* Foundation.framework */,
+				24BE274115A8373F00161A59 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24BE273415A8373F00161A59 /* DCTImageSizing */ = {
+			isa = PBXGroup;
+			children = (
+				24BE273715A8373F00161A59 /* DCTImageSizing.h */,
+				24BE273915A8373F00161A59 /* DCTImageSizing.m */,
+				2478F06615A83776000C0785 /* DCTContentSizer.h */,
+				2478F06715A83776000C0785 /* DCTContentSizer.m */,
+				24BE273515A8373F00161A59 /* Supporting Files */,
+			);
+			path = DCTImageSizing;
+			sourceTree = "<group>";
+		};
+		24BE273515A8373F00161A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24BE273615A8373F00161A59 /* DCTImageSizing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24BE274915A8373F00161A59 /* DCTImageSizingTests */ = {
+			isa = PBXGroup;
+			children = (
+				24BE274F15A8373F00161A59 /* DCTImageSizingTests.h */,
+				24BE275015A8373F00161A59 /* DCTImageSizingTests.m */,
+				2478F06B15A8378E000C0785 /* DCTContentSizerTests.h */,
+				2478F06C15A8378E000C0785 /* DCTContentSizerTests.m */,
+				24BE274A15A8373F00161A59 /* Supporting Files */,
+			);
+			path = DCTImageSizingTests;
+			sourceTree = "<group>";
+		};
+		24BE274A15A8373F00161A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24BE274B15A8373F00161A59 /* DCTImageSizingTests-Info.plist */,
+				24BE274C15A8373F00161A59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24BE272E15A8373F00161A59 /* DCTImageSizing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24BE275415A8373F00161A59 /* Build configuration list for PBXNativeTarget "DCTImageSizing" */;
+			buildPhases = (
+				24BE272B15A8373F00161A59 /* Sources */,
+				24BE272C15A8373F00161A59 /* Frameworks */,
+				24BE272D15A8373F00161A59 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTImageSizing;
+			productName = DCTImageSizing;
+			productReference = 24BE272F15A8373F00161A59 /* libDCTImageSizing.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24BE273F15A8373F00161A59 /* DCTImageSizingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24BE275715A8373F00161A59 /* Build configuration list for PBXNativeTarget "DCTImageSizingTests" */;
+			buildPhases = (
+				24BE273B15A8373F00161A59 /* Sources */,
+				24BE273C15A8373F00161A59 /* Frameworks */,
+				24BE273D15A8373F00161A59 /* Resources */,
+				24BE273E15A8373F00161A59 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24BE274715A8373F00161A59 /* PBXTargetDependency */,
+			);
+			name = DCTImageSizingTests;
+			productName = DCTImageSizingTests;
+			productReference = 24BE274015A8373F00161A59 /* DCTImageSizingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24BE272615A8373F00161A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Daniel Tull";
+			};
+			buildConfigurationList = 24BE272915A8373F00161A59 /* Build configuration list for PBXProject "DCTImageSizing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24BE272415A8373F00161A59;
+			productRefGroup = 24BE273015A8373F00161A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24BE272E15A8373F00161A59 /* DCTImageSizing */,
+				24BE273F15A8373F00161A59 /* DCTImageSizingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24BE273D15A8373F00161A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BE274E15A8373F00161A59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24BE273E15A8373F00161A59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24BE272B15A8373F00161A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BE273A15A8373F00161A59 /* DCTImageSizing.m in Sources */,
+				2478F07315A8382B000C0785 /* DCTContentSizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24BE273B15A8373F00161A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24BE275115A8373F00161A59 /* DCTImageSizingTests.m in Sources */,
+				2478F06D15A8378E000C0785 /* DCTContentSizerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24BE274715A8373F00161A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24BE272E15A8373F00161A59 /* DCTImageSizing */;
+			targetProxy = 24BE274615A8373F00161A59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24BE274C15A8373F00161A59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24BE274D15A8373F00161A59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24BE275215A8373F00161A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24BE275315A8373F00161A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24BE275515A8373F00161A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DCTImageSizing.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTImageSizing/DCTImageSizing-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TEST_AFTER_BUILD = YES;
+			};
+			name = Debug;
+		};
+		24BE275615A8373F00161A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DCTImageSizing.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTImageSizing/DCTImageSizing-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TEST_AFTER_BUILD = YES;
+			};
+			name = Release;
+		};
+		24BE275815A8373F00161A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTImageSizing/DCTImageSizing-Prefix.pch";
+				INFOPLIST_FILE = "DCTImageSizingTests/DCTImageSizingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		24BE275915A8373F00161A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTImageSizing/DCTImageSizing-Prefix.pch";
+				INFOPLIST_FILE = "DCTImageSizingTests/DCTImageSizingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24BE272915A8373F00161A59 /* Build configuration list for PBXProject "DCTImageSizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BE275215A8373F00161A59 /* Debug */,
+				24BE275315A8373F00161A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24BE275415A8373F00161A59 /* Build configuration list for PBXNativeTarget "DCTImageSizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BE275515A8373F00161A59 /* Debug */,
+				24BE275615A8373F00161A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24BE275715A8373F00161A59 /* Build configuration list for PBXNativeTarget "DCTImageSizingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24BE275815A8373F00161A59 /* Debug */,
+				24BE275915A8373F00161A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24BE272615A8373F00161A59 /* Project object */;
+}
