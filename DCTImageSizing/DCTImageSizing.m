@@ -18,7 +18,7 @@
 	CGRect contextRect = CGRectMake(0.0f, 0.0f, size.width, size.height);
 	CGRect intersectionRect = CGRectIntersection(imageRect, contextRect);
 	BOOL isOpaque = (CGRectEqualToRect(contextRect, intersectionRect)
-					 && ![self dctImageSizing_containsAlhpa]);
+					 && ![self dctImageSizing_containsAlpha]);
 
 	UIGraphicsBeginImageContextWithOptions(size, isOpaque, 0.0);
 	[self drawInRect:imageRect];
@@ -28,7 +28,7 @@
 	return image;
 }
 
-- (BOOL)dctImageSizing_containsAlhpa {
+- (BOOL)dctImageSizing_containsAlpha {
 	CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(self.CGImage);
 	if (alphaInfo == kCGImageAlphaNone
 		|| alphaInfo == kCGImageAlphaNoneSkipFirst
