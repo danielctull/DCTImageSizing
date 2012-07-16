@@ -21,15 +21,15 @@
 		2478F07115A837DE000C0785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07015A837DE000C0785 /* UIKit.framework */; };
 		2478F07215A837ED000C0785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07015A837DE000C0785 /* UIKit.framework */; };
 		2478F07315A8382B000C0785 /* DCTContentSizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2478F06715A83776000C0785 /* DCTContentSizer.m */; };
-		2478F07415A8383F000C0785 /* DCTContentSizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2478F06615A83776000C0785 /* DCTContentSizer.h */; };
 		2478F07815A84058000C0785 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478F07515A839C4000C0785 /* CoreGraphics.framework */; };
 		24BE273315A8373F00161A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE273215A8373F00161A59 /* Foundation.framework */; };
-		24BE273815A8373F00161A59 /* DCTImageSizing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24BE273715A8373F00161A59 /* DCTImageSizing.h */; };
 		24BE273A15A8373F00161A59 /* DCTImageSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BE273915A8373F00161A59 /* DCTImageSizing.m */; };
 		24BE274215A8373F00161A59 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE274115A8373F00161A59 /* SenTestingKit.framework */; };
 		24BE274515A8373F00161A59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE273215A8373F00161A59 /* Foundation.framework */; };
 		24BE274815A8373F00161A59 /* libDCTImageSizing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BE272F15A8373F00161A59 /* libDCTImageSizing.a */; };
 		24BE274E15A8373F00161A59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24BE274C15A8373F00161A59 /* InfoPlist.strings */; };
+		24C01E2115B452F200708E55 /* DCTImageSizing.h in Headers */ = {isa = PBXBuildFile; fileRef = 24BE273715A8373F00161A59 /* DCTImageSizing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C01E2215B452F500708E55 /* DCTContentSizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2478F06615A83776000C0785 /* DCTContentSizer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,20 +41,6 @@
 			remoteInfo = DCTImageSizing;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		24BE272D15A8373F00161A59 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				24BE273815A8373F00161A59 /* DCTImageSizing.h in CopyFiles */,
-				2478F07415A8383F000C0785 /* DCTContentSizer.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		24036F4A15A844F900644C6D /* DCTImageSizingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTImageSizingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +205,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		24C01E2015B452E800708E55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C01E2115B452F200708E55 /* DCTImageSizing.h in Headers */,
+				24C01E2215B452F500708E55 /* DCTContentSizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		24036F4915A844F900644C6D /* DCTImageSizingDemo */ = {
 			isa = PBXNativeTarget;
@@ -243,7 +241,7 @@
 			buildPhases = (
 				24BE272B15A8373F00161A59 /* Sources */,
 				24BE272C15A8373F00161A59 /* Frameworks */,
-				24BE272D15A8373F00161A59 /* CopyFiles */,
+				24C01E2015B452E800708E55 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -490,6 +488,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TEST_AFTER_BUILD = YES;
 			};
@@ -504,6 +503,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TEST_AFTER_BUILD = YES;
 			};
