@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#ifndef dctimagesizing
+#define dctimagesizing_1_0     10000
+#define dctimagesizing         dctimagesizing_1_0
+#endif
+
 @interface UIImage (DCTImageSizing)
 
 - (UIImage *)dct_imageWithSize:(CGSize)size contentMode:(UIViewContentMode)contentMode;
