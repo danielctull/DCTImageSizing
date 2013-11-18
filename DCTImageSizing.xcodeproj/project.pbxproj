@@ -61,6 +61,7 @@
 		2478F06C15A8378E000C0785 /* DCTContentSizerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTContentSizerTests.m; sourceTree = "<group>"; };
 		2478F07015A837DE000C0785 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2478F07515A839C4000C0785 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		24922C2D183A7221007DB3BD /* Architectures.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Architectures.xcconfig; sourceTree = "<group>"; };
 		24BE273215A8373F00161A59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24BE273615A8373F00161A59 /* DCTImageSizing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTImageSizing-Prefix.pch"; sourceTree = "<group>"; };
 		24BE273715A8373F00161A59 /* DCTImageSizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTImageSizing.h; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 		24BE272415A8373F00161A59 = {
 			isa = PBXGroup;
 			children = (
+				24922C2D183A7221007DB3BD /* Architectures.xcconfig */,
 				24BE273415A8373F00161A59 /* DCTImageSizing */,
 				24BE274915A8373F00161A59 /* DCTImageSizingTests */,
 				24036F4F15A844F900644C6D /* DCTImageSizingDemo */,
@@ -416,6 +418,7 @@
 		};
 		2437B75F15B97ED900750117 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24922C2D183A7221007DB3BD /* Architectures.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				DSTROOT = /tmp/DCTImageSizing.dst;
@@ -430,6 +433,7 @@
 		};
 		2437B76015B97ED900750117 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24922C2D183A7221007DB3BD /* Architectures.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				DSTROOT = /tmp/DCTImageSizing.dst;
